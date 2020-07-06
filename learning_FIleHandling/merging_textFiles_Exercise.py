@@ -1,0 +1,18 @@
+#merge three text files into one.
+file1 = open("file1.txt","r")
+file2 = open("file2.txt","r")
+file3 = open("file3.txt","r")
+file1.seek(0)
+file2.seek(0)
+file3.seek(0)
+content1 = file1.readline()
+content2 = file2.readline()
+content3 = file3.readline()
+content4 = content1+content2+content3
+file4 = open("file4","w")
+file4.write(content4)
+file1.close()
+file2.close()
+file3.close()
+file4.close()
+#Alhamdulillah, worked very first time :-)
